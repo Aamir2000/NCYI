@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "watch": true,
+        "outDir": "./Javascript",
+        "removeComments": true,
+        "target": "ES6"
+    },
+    "compileOnSave": true,
+    "typeAcquisition": {
+        "enable": true,
+        "include": [
+            "jquery"
+        ]
+    }
+
+}

@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:300,400,600,700,800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans";
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white !important;
+}
+
+a:active {
+  color: white !important;
+}
+
+.content_wrapper {
+  max-width: 960px !important;
+  margin: 0px auto;
+}
+
+.Nav {
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid grey;
+}
+
+@media screen and (min-width: 639px) {
+  .Nav {
+    padding: 10px 30px;
+  }
+}
+
+.Nav .list_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.Nav .list_wrapper #list_wrap {
+  position: absolute;
+  top: 190%;
+  right: 10px;
+  width: 180px;
+  border-radius: 5px;
+  padding: 10px 0px;
+  display: none;
+  background-color: #242424;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .list_wrapper #list_wrap {
+    display: block !important;
+    position: static !important;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+  }
+  .Nav .list_wrapper #list_wrap > li {
+    display: inline-block;
+  }
+}
+
+.Nav .list_wrapper #list_wrap li, .Nav .list_wrapper #list_wrap .dropdown {
+  font-size: 1.2em;
+  color: white;
+  list-style: none;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.Nav .list_wrapper #list_wrap li:hover, .Nav .list_wrapper #list_wrap .dropdown:hover {
+  background-color: #111111 !important;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .list_wrapper #list_wrap li, .Nav .list_wrapper #list_wrap .dropdown {
+    font-size: 1em;
+  }
+  .Nav .list_wrapper #list_wrap li:hover, .Nav .list_wrapper #list_wrap .dropdown:hover {
+    background-color: #1d1d1d !important;
+  }
+}
+
+.Nav .list_wrapper #list_wrap .dropdown {
+  position: relative;
+  padding: 0px 10px;
+}
+
+.Nav .list_wrapper #list_wrap .dropdown li {
+  font-size: .8em !important;
+}
+
+.Nav .list_wrapper #list_wrap .dropdown li:hover {
+  background-color: #1a1a1a !important;
+}
+
+.Nav .list_wrapper #list_wrap .dropdown > span {
+  display: inline-block;
+  padding: 10px;
+}
+
+.Nav .list_wrapper #list_wrap .dropdown > ul {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .list_wrapper #list_wrap .dropdown > ul {
+    position: absolute;
+    left: 0px;
+    background-color: #111111;
+    width: 100%;
+    padding: 0px 0px;
+  }
+}
+
+.Nav .list_wrapper #list_wrap .dropdown .drop_select {
+  background-color: #1a1a1a;
+}
+
+.Nav .list_wrapper #list_wrap .active {
+  background-color: #111111;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .list_wrapper #list_wrap .active {
+    background-color: #1d1d1d;
+    border-radius: 5px;
+  }
+}
+
+.Nav .list_wrapper #list_wrap .active_drop {
+  background-color: #1a1a1a !important;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .list_wrapper #list_wrap .active_drop {
+    font-size: 1em;
+    background-color: #1d1d1d !important;
+  }
+}
+
+.Nav .home_icon {
+  color: white;
+  font-size: 30px;
+}
+
+.Nav .ymca_logo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  width: 50%;
+  max-width: 80px;
+}
+
+@media screen and (min-width: 720px) {
+  .Nav .menu_botton {
+    display: none !important;
+  }
+}
+
+.Nav .menu_icon {
+  text-align: right;
+}
+
+.Nav .menu_icon > * {
+  width: 23px;
+}
+
+.Banner {
+  background: url("../Prototype/pile-of-covered-books-159751.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.Banner .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 25% 15px;
+  text-align: center;
+}
+
+.Banner .overlay > * {
+  margin: 4px 0px;
+}
+
+.Banner .overlay h2 {
+  font-size: 2.2rem;
+}
+
+@media screen and (min-width: 639px) {
+  .Banner .overlay h2 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 639px) {
+  .Banner .overlay p {
+    font-size: 1.6rem;
+  }
+}
+
+.Banner .overlay button {
+  width: 120px;
+  height: 45px;
+  background-color: #F20707;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Banner .overlay button:hover {
+  background-color: #a50a0a;
+}
+
+@media screen and (min-width: 639px) {
+  .Banner .overlay button {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .Banner .overlay {
+    padding: 12.5% 15px !important;
+  }
+}
+
+.intro_content {
+  padding: 25px 15px;
+  padding-bottom: 50px;
+  background: url("../Assets/svg/corner.svg"), url("../Assets/svg/Text.svg"), #FCFCFC;
+  background-repeat: no-repeat;
+  background-position: 100% 100% , 0% 95%;
+  background-size: 4.8rem, 1.6rem;
+}
+
+.intro_content h3 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.intro_content p {
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.mission {
+  padding: 25px 15px;
+}
+
+.mission h2 {
+  text-align: center;
+  font-size: 28px;
+}
+
+.mission p {
+  padding: 15px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.cards h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cards .card_wrapper {
+  padding: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards .card_wrapper .card {
+  cursor: pointer !important;
+  width: 20rem;
+  padding: 15px;
+  text-align: center;
+  margin: 10px 15px;
+  background-color: #cf2046;
+  color: #ffffff;
+  border-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.cards .card_wrapper .card h3 {
+  font-weight: 600;
+}
+
+.cards .card_wrapper .card p {
+  font-size: 17px;
+}
+
+.cards .card_wrapper .card > * {
+  margin: 5px 0px;
+}
+
+.cards .card_wrapper .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 10px grey;
+          box-shadow: 5px 5px 10px grey;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.bottom_content {
+  padding: 25px 15px;
+  background: #FCFCFC;
+  background: url("../Assets/svg/corner.svg"), #FCFCFC;
+  background-repeat: no-repeat;
+  background-position: 100% 100% , 0% 95%;
+  background-size: 4.8rem;
+}
+
+.bottom_content h3 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.bottom_content p {
+  padding: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.end {
+  background-color: #2D2D2D;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.end span h3 {
+  font-weight: 600;
+  color: #8f8f8f;
+}
+
+.end span ul {
+  padding: 5px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.end span ul li {
+  list-style: none;
+  display: inline;
+  padding: 5px 10px;
+  background-color: #444;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+.end span ul li:hover {
+  background-color: black;
+}

@@ -10,6 +10,7 @@ class index {
     constructor() {
         this.init();
         this.menu_items();
+        this.read_more();
     }
     init() {
         menu_icon.addEventListener("click", (e) => {
@@ -36,6 +37,14 @@ class index {
                     dropdown.classList.add("active");
                 });
             }
+        });
+    }
+    read_more() {
+        $("#Read_M").on("click", e => {
+            $(".read_more").css({ display: "flex" });
+        });
+        $(".fa-times").on("click", e => {
+            $(".read_more").css({ display: "none" });
         });
     }
 }

@@ -47,6 +47,13 @@ a:active {
   }
 }
 
+@media screen and (min-width: 840px) {
+  .Nav {
+    -ms-grid-columns: 1fr 1fr 2fr;
+        grid-template-columns: 1fr 1fr 2fr;
+  }
+}
+
 .Nav .list_wrapper {
   position: relative;
   width: 100%;
@@ -63,12 +70,12 @@ a:active {
   background-color: #242424;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 840px) {
   .Nav .list_wrapper #list_wrap {
     display: block !important;
     position: static !important;
     width: 100%;
-    text-align: center;
+    text-align: right;
     background-color: #000;
   }
   .Nav .list_wrapper #list_wrap > li {
@@ -161,6 +168,12 @@ a:active {
   font-size: 30px;
 }
 
+@media screen and (min-width: 840px) {
+  .Nav .home_icon {
+    display: none !important;
+  }
+}
+
 .Nav .ymca_logo {
   -ms-grid-column-align: center;
       justify-self: center;
@@ -168,7 +181,22 @@ a:active {
   max-width: 80px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 840px) {
+  .Nav .ymca_logo {
+    -ms-grid-column-align: left;
+        justify-self: left;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .Nav .ymca_logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+@media screen and (min-width: 840px) {
   .Nav .menu_botton {
     display: none !important;
   }
@@ -194,6 +222,8 @@ a:active {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 25% 15px;
   text-align: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .Banner .overlay > * {
@@ -397,4 +427,70 @@ a:active {
 
 .end span ul li:hover {
   background-color: black;
+}
+
+.read_more {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.read_more_wrapper {
+  width: 80%;
+  background-color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px auto;
+  border-radius: 10px;
+  padding: 30px;
+  max-height: 80%;
+  overflow-y: scroll;
+}
+
+.read_more_wrapper::-webkit-scrollbar {
+  display: none !important;
+}
+
+.top_read {
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_read > i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.read_content {
+  padding: 15px;
+  text-align: center;
+}
+
+ph {
+  color: red;
+  font-size: 18px;
 }

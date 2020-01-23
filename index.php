@@ -17,7 +17,7 @@
         <div class="list_wrapper menu_icon">
             <img class="menu_icon menu_botton" src="./Assets/svg/menu.svg" alt="Menu">
             <ul id="list_wrap">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="./index.php">Home</a></li>
                 <li class="dropdown">
                     <span class="drop_name">Activities <i class="fa fa-sort-down"></i></span>
                     <ul>
@@ -27,8 +27,8 @@
                         <li><a href="#">Events</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="./courses.php">Courses</a></li>
+                <li><a href="./contact.php">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -168,10 +168,10 @@
         <span>
             <h3>Learn More About Us :</h3>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About Us</a></li>
-                <li><a href="index.html">Contact Us</a></li>
-                <li><a href="index.html">Courses</a></li>
+                <li><a href="./index.php">Home</a></li>
+                <li><a href="./index.php">About Us</a></li>
+                <li><a href="./courses.php">Courses</a></li>
+                <li><a href="./index.php">Contact Us</a></li>
             </ul>
         </span>
         <img src="./Assets/svg/logo.svg" alt="Logo">
@@ -183,10 +183,6 @@
 <footer>
     <script src="./jquery-3.4.1.js"></script>
     <script src="./Javascript/index.js"></script>
-
-
-
-
 </footer>
 
 </html>

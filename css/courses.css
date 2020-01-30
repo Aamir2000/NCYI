@@ -434,8 +434,9 @@ ph {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  word-wrap: break-word;
       grid-template-areas: "heading heading" "price price" "c_c c_c";
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -492,6 +493,7 @@ ph {
   text-align: center;
   background-color: rgba(238, 238, 238, 0.8);
   border-radius: 10px;
+  min-width: 0px;
 }
 
 @media screen and (min-width: 720px) {
@@ -505,7 +507,7 @@ ph {
 }
 
 .pagination {
-  padding: 25px 0px;
+  padding: 25px 15px;
   color: #444 !important;
   text-align: center;
 }
@@ -516,14 +518,12 @@ ph {
   width: 35px;
   padding: 5px 0px;
   border-radius: 5px;
-  margin: 0px 5px;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
   cursor: pointer;
 }
 
 .pagination span:hover {
   background-color: #a50a0a;
-}
-
-.pagination a {
-  font-size: 20px;
 }

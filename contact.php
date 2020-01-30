@@ -53,7 +53,7 @@
     <div class="contact_form">
         <div class="contact_form_wrapper">
             <h2>Contact Us</h2>
-            <p>You can contact us or send us any queries about any courses or anything related to out institute and we'll definately respond back within 1 - 2 working days</p>
+            <p>You can contact us or send us any queries about any courses or anything related to our institute and we'll definately respond back within 1 - 2 working days</p>
             <form action="#" method="post">
                 <label for="full_name">Name</label> <br>
                 <input id="full_name" type="text" name="Full_Name" placeholder="Full Name"><br>
@@ -63,8 +63,11 @@
                 <input id="phone" type="tel" name="Phone" maxlength=10 placeholder="Phone Number"><br>
                 <label for="mess_con">Message</label><br>
                 <textarea name="Message" id="mess_con" cols="30" rows="10" placeholder="Enter Your Queries Here.." resizeable="no"></textarea><br>
-                <input id="submit" type="submit" value="Submit">
+                <input id="submit" type="button" value="Submit">
                 <input id="reset" type="reset" value="Clear">
+                <div class="message">
+                        
+                </div>
             </form>
         </div>
     </div>
@@ -87,5 +90,6 @@
 <footer>
     <script src="./jquery-3.4.1.js"></script>
     <script src="./Javascript/contact.js"></script>
+    <script src="./Javascript/API_Typescript/contact_form.js"></script>
 </footer>
 </html>
